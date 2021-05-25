@@ -33,10 +33,15 @@ def compress(some_string):
     return compressed
 
 if __name__ == "__main__":
+    print "--Compression--"
     print compress("matthew") == "aehmt2w"
     print compress("the quick brown fox jumps over the lazy dog") == "abcde3fgh2ijklmno4pqr2st2u2vwxyz"
+    print compress("zyxwvutsrqponmlkjihgfedcba") == "abcdefghijklmnopqrstuvwxyz"
+    print
 
+    print "--Palindrome Permutation--"
     print is_palindrome("Racecar")
     print is_palindrome("Able was I ere I saw Elba")
     print is_palindrome("Doc, note: I dissent. A fast never prevents a fatness. I diet on cod")
     print is_palindrome("T. Eliot, top bard, notes putrid tang emanating, is sad; I'd assign it a name: gnat dirt upset on drab pot toilet")
+    print
