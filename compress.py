@@ -1,11 +1,13 @@
+import utilities
+
 def compress(some_string):
     compressed = ""
     letter_counts = [0 for i in range(26)]
 
-    letters = "".join(filter(str.isalpha, some_string.lower()))
+    letters = utilities.get_letters(some_string)
 
     for char in letters:
-        index = ord(char) - ord("a")
+        index = utilities.get_letter_index(char)
         letter_counts[index] += 1
 
     for index, count in enumerate(letter_counts):

@@ -8,6 +8,10 @@ to only lowercase letters, and performing the algorithm on those.
 unique.py is for the following: Implement an algorithm to determine if a string
 has all unique characters. What if you cannot use additional data structures?
 
+# 1.2: Check Permutation
+permutation.py is for the following: Given two strings, write a method 
+to decide if one is a permutation of the other.
+
 # 1.4: Palindrome Permutation
 palindrome.py is for the following: Given a string, write a function to check
 if it is a permutation of a palindrome. A palindrome is a word or phrase that
