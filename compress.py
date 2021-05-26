@@ -2,13 +2,9 @@ import utilities
 
 def compress(some_string):
     compressed = ""
-    letter_counts = [0 for i in range(26)]
 
     letters = utilities.get_letters(some_string)
-
-    for char in letters:
-        index = utilities.get_letter_index(char)
-        letter_counts[index] += 1
+    letter_counts = utilities.get_letter_counts(letters)
 
     for index, count in enumerate(letter_counts):
         if count:
